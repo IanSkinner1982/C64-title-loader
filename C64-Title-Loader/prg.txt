@@ -1,7 +1,7 @@
 0 rem !to "build/loader.prg"
 10 print"{clear}"
 20 print"ianskinner1982's title launcher"
-30 print"v0.0.0"
+30 print"v1.0.0"
 40 print"press any key to continue" 
 100 get k$:if k$ = ""then 100 
 110 print"{clear}welcome to ian's title launcher. here you can see all of his projects and brief descriptions of them."
