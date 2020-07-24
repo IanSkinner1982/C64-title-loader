@@ -1,0 +1,39 @@
+0 rem !to "build/loader.prg"
+10 print"{clear}"
+20 print"ianskinner1982's title launcher"
+30 print"v0.0.0"
+40 print"press any key to continue" 
+100 get k$:if k$ = ""then 100 
+110 print"{clear}welcome to ian's title launcher. here you can see all of his projects and brief descriptions of them."
+120 rem titles
+130 print"please choose a title from below."
+140 print" "
+150 tn$ = " "
+230 print"(1) c64 math game"
+240 print"(2) you are an idiot c64"
+250 print"(3) tic tac toe c64"
+260 print"(4) c64 sprite demo"
+270 print"(5) c64 clock"
+280 print"(6) c64 decimal bug"
+
+1000 get k$:if k$ = "" then 1000
+1010 if k$ < "1" then 40000 
+1020 if k$ > "6" then 40000
+1130 if k$ = "1" then tn$ = "math game v1.0.1"
+1130 if k$ = "2" then tn$ = "idiot v1.0.0"
+1130 if k$ = "3" then tn$ = "tictactoe v1.1.0"
+1130 if k$ = "4" then tn$ = "boot"
+1130 if k$ = "5" then tn$ = "clocks v0.1.0"
+1130 if k$ = "6" then tn$ = "decimal bug"
+
+10000 if tn$ = " " then goto 1000 
+10010 goto 50000 rem remove this later
+
+40000 "invalid answer. please try again."
+40010 goto 1000
+50000 q$=chr$(34):rem quotes
+50010 d$=chr$(17):rem cursor down
+50020 print"load";q$;"tn$";q$;",8"
+50030 printd$;d$;d$;d$;"run"
+50040 rem load keyboard buffer and flush it
+50050 poke631,19:poke632,13:poke633,13:poke198,3
