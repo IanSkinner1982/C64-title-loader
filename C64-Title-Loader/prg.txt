@@ -165,29 +165,3 @@
 50030 printd$;d$;d$;d$;"run:"
 50040 rem load keyboard buffer and flush it
 50050 poke631,19:poke632,13:poke633,13:poke198,3
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
