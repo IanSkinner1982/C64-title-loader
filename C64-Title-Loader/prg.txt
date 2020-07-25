@@ -28,7 +28,7 @@
 
 10000 if tn$ = " " then goto 1000 
 10010 goto 50000 rem remove this later
-11000 print" *CCCCCCCCCCCCCCCCCC*CCCCCCCCCCCCCCCCC*"
+11000 print"{clear} *CCCCCCCCCCCCCCCCCC*CCCCCCCCCCCCCCCCC*"
 11010 print" B this app is a... B                 B"
 11020 print" B                  B (1) v0.0.1      B"
 11030 print" B                  B                 B"
@@ -50,8 +50,8 @@
 11190 print" B   copyright ian m. skinner 2020    B"
 11200 print" *CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC*"
 11210 get k$:if k$ = "" then 11210
-11215 if k$ < "1" then 40000 
-11220 if k$ > "6" then 40000
+11215 if k$ < "1" then 11210 
+11220 if k$ > "6" then 11210
 11225 if k$ = "1" then tn$ = "math game v0.0.1"
 11230 if k$ = "2" then tn$ = "math game v0.0.2"
 11240 if k$ = "3" then tn$ = "math game v0.0.3"
@@ -159,9 +159,19 @@
 
 40000 print"invalid answer. please try again."
 40010 goto 1000
-50000 q$=chr$(34):rem quotes
+50000 print"{clear}"
+50005 q$=chr$(34):rem quotes
 50010 d$=chr$(17):rem cursor down
-50020 print"load";q$;"tn$";q$;",8:"
-50030 printd$;d$;d$;d$;"run:"
+50020 print"load";q$;tn$;q$;",8"
+50030 printd$;d$;d$"run"
 50040 rem load keyboard buffer and flush it
 50050 poke631,19:poke632,13:poke633,13:poke198,3
+50060 ifaa=0thenpoke56,92:clr:aa=1:print"loading file...":load"tn$",
+8,1
+50070 rem copy memory
+50080 poke88,0:poke89,95:poke90,64:poke91,130:poke781,4:poke782,0:sys41964
+50090 poke88,0:poke89,219:poke90,40:poke91,134:poke781,4:poke782,0:sys41964
+
+
+
+
