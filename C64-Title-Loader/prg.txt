@@ -19,21 +19,175 @@
 1000 get k$:if k$ = "" then 1000
 1010 if k$ < "1" then 40000 
 1020 if k$ > "6" then 40000
-1130 if k$ = "1" then tn$ = "math game v1.0.1"
-1130 if k$ = "2" then tn$ = "idiot v1.0.0"
-1130 if k$ = "3" then tn$ = "tictactoe v1.1.0"
-1130 if k$ = "4" then tn$ = "boot"
-1130 if k$ = "5" then tn$ = "clocks v0.1.0"
-1130 if k$ = "6" then tn$ = "decimal bug"
+1130 if k$ = "1" then 11000
+1130 if k$ = "2" then 12000
+1130 if k$ = "3" then 13000
+1130 if k$ = "4" then 14000
+1130 if k$ = "5" then 15000
+1130 if k$ = "6" then 16000
 
 10000 if tn$ = " " then goto 1000 
 10010 goto 50000 rem remove this later
+11000 print" *CCCCCCCCCCCCCCCCCC*CCCCCCCCCCCCCCCCC*"
+11010 print" B this app is a... B                 B"
+11020 print" B                  B (1) v0.0.1      B"
+11030 print" B                  B                 B"
+11040 print" B                  B (2) v0.0.2      B"
+11050 print" B    math game     B                 B"
+11060 print" B                  B (3) v0.0.3      B"
+11070 print" B                  B                 B"
+11080 print" B                  B (4) v0.0.4      B"
+11090 print" B                  B                 B"
+11100 print" B                  B (5) v1.0.0      B"
+11110 print" B                  B                 B"
+11120 print" B                  B (6) v1.0.1      B"
+11130 print" B                  B                 B"
+11140 print" *CCCCCCCCCCCCCCCCCC*CCCCCCCCCCCCCCCCC*"
+11150 print" B   please select the version that   B"
+11160 print" B             you want               B"
+11170 print" B                                    B"
+11180 print" *CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC*"
+11190 print" B   copyright ian m. skinner 2020    B"
+11200 print" *CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC*"
+11210 get k$:if k$ = "" then 11210
+11215 if k$ < "1" then 40000 
+11220 if k$ > "6" then 40000
+11225 if k$ = "1" then tn$ = "math game v0.0.1"
+11230 if k$ = "2" then tn$ = "math game v0.0.2"
+11240 if k$ = "3" then tn$ = "math game v0.0.3"
+11250 if k$ = "4" then tn$ = "math game v0.0.4"
+11260 if k$ = "5" then tn$ = "math game v1.0.1"
+11270 if k$ = "6" then tn$ = "math game v1.0.1"
+11270 if tn$ = " " then 11210
+11280 goto 50000
 
-40000 "invalid answer. please try again."
+12000 print" *CCCCCCCCCCCCCCCCCC*CCCCCCCCCCCCCCCCC*"
+12010 print" B this app is a... B                 B"
+12020 print" B                  B (1) v0.0.1      B"
+12030 print" B                  B                 B"
+12040 print" B                  B (2) v0.0.2      B"
+12050 print" B      idiot       B                 B"
+12060 print" B                  B (3) v1.0.0      B"
+12070 print" B                  B                 B"
+12080 print" B                  B                 B"
+12090 print" B                  B                 B"
+12100 print" B                  B                 B"
+12110 print" B                  B                 B"
+12120 print" B                  B                 B"
+12130 print" B                  B                 B"
+12140 print" *CCCCCCCCCCCCCCCCCC*CCCCCCCCCCCCCCCCC*"
+12150 print" B   please select the version that   B"
+12160 print" B             you want               B"
+12170 print" B                                    B"
+12180 print" *CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC*"
+12190 print" B   copyright ian m. skinner 2020    B"
+12200 print" *CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC*"
+12210 get k$:if k$ = "" then 12210
+12215 if k$ < "1" then 12210
+12220 if k$ > "6" then 12210
+12225 if k$ = "1" then tn$ = "idiot v0.0.1"
+12230 if k$ = "2" then tn$ = "idiot v0.0.2"
+12240 if k$ = "3" then tn$ = "idiot v1.0.0"
+12270 if tn$ = " " then 12210
+12280 goto 50000
+
+13000 print" *CCCCCCCCCCCCCCCCCC*CCCCCCCCCCCCCCCCC*"
+13010 print" B this app is a... B                 B"
+13020 print" B                  B (1) v1.0.0      B"
+13030 print" B                  B                 B"
+13040 print" B                  B (2) v1.0.1      B"
+13050 print" B    tictactoe     B                 B"
+13060 print" B                  B (3) v1.1.0      B"
+13070 print" B                  B                 B"
+13080 print" B                  B                 B"
+13090 print" B                  B                 B"
+13100 print" B                  B                 B"
+13110 print" B                  B                 B"
+13120 print" B                  B                 B"
+13130 print" B                  B                 B"
+13140 print" *CCCCCCCCCCCCCCCCCC*CCCCCCCCCCCCCCCCC*"
+13150 print" B   please select the version that   B"
+13160 print" B             you want               B"
+13170 print" B                                    B"
+13180 print" *CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC*"
+13190 print" B   copyright ian m. skinner 2020    B"
+13200 print" *CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC*"
+13210 get k$:if k$ = "" then 13210
+13215 if k$ < "1" then 13210
+13220 if k$ > "6" then 13210
+13225 if k$ = "1" then tn$ = "tictactoe v1.0.0"
+13230 if k$ = "2" then tn$ = "tictactoe v1.0.1"
+13240 if k$ = "3" then tn$ = "tictactoe v1.1.0"
+13270 if tn$ = " " then 13210
+13280 goto 50000
+
+14000 print" *CCCCCCCCCCCCCCCCCC*CCCCCCCCCCCCCCCCC*"
+14010 print" B this app is a... B                 B"
+14020 print" B                  B (1) v1.0.0      B"
+14030 print" B                  B                 B"
+14040 print" B                  B                 B"
+14050 print" B       demo       B                 B"
+14060 print" B                  B                 B"
+14070 print" B                  B                 B"
+14080 print" B                  B                 B"
+14090 print" B                  B                 B"
+14100 print" B                  B                 B"
+14110 print" B                  B                 B"
+14120 print" B                  B                 B"
+14130 print" B                  B                 B"
+14140 print" *CCCCCCCCCCCCCCCCCC*CCCCCCCCCCCCCCCCC*"
+14150 print" B   please select the version that   B"
+14160 print" B             you want               B"
+14170 print" B                                    B"
+14180 print" *CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC*"
+14190 print" B   copyright ian m. skinner 2020    B"
+14200 print" *CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC*"
+14210 get k$:if k$ = "" then 14210
+14215 if k$ < "1" then 14210
+14220 if k$ > "6" then 14210
+14225 if k$ = "1" then tn$ = "boot"
+14270 if tn$ = " " then 14210
+14280 goto 50000
+
+
+
+
+
+
+
+
+
+40000 print"invalid answer. please try again."
 40010 goto 1000
 50000 q$=chr$(34):rem quotes
 50010 d$=chr$(17):rem cursor down
-50020 print"load";q$;"tn$";q$;",8"
-50030 printd$;d$;d$;d$;"run"
+50020 print"load";q$;"tn$";q$;",8:"
+50030 printd$;d$;d$;d$;"run:"
 50040 rem load keyboard buffer and flush it
 50050 poke631,19:poke632,13:poke633,13:poke198,3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
