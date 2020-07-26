@@ -2,19 +2,52 @@
 10 print"{clear}"
 20 print"ianskinner1982's title launcher"
 30 print"v1.0.0"
-40 print"press any key to continue" 
-100 get k$:if k$ = ""then 100 
-110 print"{clear}welcome to ian's title launcher. here you can see all of his projects and brief descriptions of them."
-120 rem titles
-130 print"please choose a title from below."
-140 print" "
-150 tn$ = " "
-230 print"(1) c64 math game"
-240 print"(2) you are an idiot c64"
-250 print"(3) tic tac toe c64"
-260 print"(4) c64 sprite demo"
-270 print"(5) c64 clock"
-280 print"(6) c64 decimal bug"
+40 print"press 'space' to continue or press i for more info on the developer." 
+60 get k$:if k$ = ""then 60 
+70 if k$="i" then 100
+80 if k$=" " then 410
+90 goto 60
+
+100 print"{clear}"
+110 print" *CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC*"
+120 print" B  ian skinner (ianskinner1982) is a B"
+130 print" B young c64 programmer. he started   B"
+140 print" B making projects in 2017 and has    B"
+150 print" B kept on working with the c64 since B"
+160 print" B then.                              B"
+170 print" B                                    B"  
+180 print" B  ian started off making programs   B"
+190 print" B with the c64c. in 2019 he began to B"
+200 print" B use the c64 mini for all of his    B"
+210 print" B projects. now he mostly uses vice  B"
+220 print" B and dustlayer.                     B"
+230 print" B                                    B"
+240 print" B  all of his saved programs can be  B"
+250 print" B found on this disk.                B"
+260 print" B                                    B"
+270 print" B  if you want to talk to him in     B"
+280 print" B person then join his server at     B"
+290 print" B                                    B"
+300 print" B   https://tinyurl.com/ianserver    B"
+310 print" B                                    B"
+320 print" *CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC*"
+330 print" B   copyright ian m. skinner 2020    B"
+340 print" *CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC*"
+350 get k$:if k$=""then 350
+360 goto 10
+
+
+410 print"{clear}welcome to ian's title launcher. here you can see all of his projects and brief descriptions of them."
+420 rem titles
+430 print"please choose a title from below."
+440 print" "
+450 tn$ = " "
+530 print"(1) c64 math game"
+540 print"(2) you are an idiot c64"
+550 print"(3) tic tac toe c64"
+560 print"(4) c64 sprite demo"
+570 print"(5) c64 clock"
+580 print"(6) c64 decimal bug"
 
 1000 get k$:if k$ = "" then 1000
 1010 if k$ < "1" then 40000 
@@ -39,11 +72,6 @@
 15010 goto 30000
 16000 id$="6":v1$="(1) v1.0.0":v2$="          ":v3$="          ":v4$="          ":v5$="          ":v6$="          "
 16010 goto 30000
-
-
-
-
-
 
 30000 print"{clear}"
 30005 print" *CCCCCCCCCCCCCCCCCC*CCCCCCCCCCCCCCCCC*"
@@ -114,19 +142,17 @@
 36070 if tn$ = " " then 36000
 36080 goto 50000
 
-
-
-
 39999 print"you shouldn't be seeing this"
 40000 print"invalid answer. please try again."
 40010 goto 1000
 50000 print"{clear}"
-50005 q$=chr$(34):rem quotes
-50010 d$=chr$(17):rem cursor down
-50020 print"load"q$tn$q$",8"
-50030 printd$;d$;d$;d$;"run"
-50040 rem load keyboard buffer and flush it
-50050 poke631,19:poke632,13:poke633,13:poke198,3
+50010 print chr$(147);
+50020 q$=chr$(34):rem quotes
+50030 d$=chr$(17):rem cursor down
+50040 print"load"q$tn$q$",8"
+50050 printd$;d$;d$;d$;"run"
+50060 rem load keyboard buffer and flush it
+50070 poke631,19:poke632,13:poke633,13:poke198,3
 
 
 
