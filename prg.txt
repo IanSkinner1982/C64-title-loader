@@ -1,13 +1,17 @@
 0 rem !to "build/loader.prg"
 10 print"{clear}"
-20 print"ianskinner1982's title launcher"
-30 print"v1.0.0"
-40 print"press 'space' to continue or press i for more info on the developer." 
+15 dn$=chr$(17):rem cursor down
+12 printdn$dn$dn$dn$dn$dn$dn$
+19 print" *CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC*"
+20 print" B  ianskinner1982's title launcher   B"
+30 print" B             v1.2.0                 B"
+40 print" B   press 'space' to continue        B" 
+50 print" Bor press i for info on the developerB"
+55 print" *CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC*"
 60 get k$:if k$ = ""then 60 
 70 if k$="i" then 100
-80 if k$=" " then 410
+80 if k$=" " then 400
 90 goto 60
-
 100 print"{clear}"
 110 print" *CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC*"
 120 print" B  ian skinner (ianskinner1982) is a B"
@@ -35,23 +39,34 @@
 340 print" *CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC*"
 350 get k$:if k$=""then 350
 360 goto 10
-
-
-410 print"{clear}welcome to ian's title launcher. here you can see all of his projects and brief descriptions of them."
-420 rem titles
-430 print"please choose a title from below."
-440 print" "
+400 print"{clear}{home} *CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC*"
+410 print" Bwelcome to ian's title launcher.    B"
+415 print" Bhere you can see all of his projectsB"
+420 print" Band brief descriptions of them.     B"
+430 print" Bplease choose a title from below.   B"
 450 tn$ = " "
-530 print"(1) c64 math game"
-540 print"(2) you are an idiot c64"
-550 print"(3) tic tac toe c64"
-560 print"(4) c64 sprite demo"
-570 print"(5) c64 clock"
-580 print"(6) mosaic c64"
-
+510 print" *CCCCCCC*CCCCCCCCCCCCCCCCCCCCCCCCCCCC*"
+520 print" B       B                            B"
+530 print" B  (1)  B   c64 math game            B"
+535 print" B       B                            B"
+540 print" B  (2)  B   you are an idiot c64     B"
+545 print" B       B                            B"
+550 print" B  (3)  B   tic tac toe c64          B"
+555 print" B       B                            B"   
+560 print" B  (4)  B   c64 sprite demo          B"
+565 print" B       B                            B"
+570 print" B  (5)  B   c64 clock                B"
+575 print" B       B                            B" 
+580 print" B  (6)  B   mosaic c64               B"
+590 print" B       B                            B"
+600 print" B       B                            B"
+610 print" B       B                            B"
+620 print" B       B                            B"
+630 print" B       B                            B"
+900 print" *CCCCCCC*CCCCCCCCCCCCCCCCCCCCCCCCCCCC*"
 1000 get k$:if k$ = "" then 1000
-1010 if k$ < "1" then 40000 
-1020 if k$ > "6" then 40000
+1010 if k$ < "1" then 1000
+1020 if k$ > "6" then 1000
 1130 if k$ = "1" then 11000
 1140 if k$ = "2" then 12000
 1150 if k$ = "3" then 13000
@@ -109,7 +124,7 @@
 30090 print" "d8$"                 B"
 30100 print" "d9$" "v5$"      B"
 30110 print" B                  B                 B"
-30120 print" B press 'r' to go  B "v6$"      B"
+30120 print" B press 'b' to go  B "v6$"      B"
 30130 print" B       back       B                 B"
 30140 print" *CCCCCCCCCCCCCCCCCC*CCCCCCCCCCCCCCCCC*"
 30150 print" B   please select the version that   B"
@@ -120,11 +135,11 @@
 30200 print" *CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC*"
 
 30210 if id$="1" then 31000
-30210 if id$="2" then 32000
-30210 if id$="3" then 33000
-30210 if id$="4" then 34000
-30210 if id$="5" then 35000
-30210 if id$="6" then 36000
+30220 if id$="2" then 32000
+30230 if id$="3" then 33000
+30240 if id$="4" then 34000
+30250 if id$="5" then 35000
+30260 if id$="6" then 36000
 
 31000 get k$:if k$ = "" then 31000
 31020 if k$ = "1" then tn$ = "math game v0.0.1"
@@ -133,41 +148,44 @@
 31050 if k$ = "4" then tn$ = "math game v0.0.4"
 31060 if k$ = "5" then tn$ = "math game v1.0.1"
 31070 if k$ = "6" then tn$ = "math game v1.0.1"
-31070 if tn$ = " " then 31000
-31080 goto 50000
+31080 if k$ = "b" then 400
+31090 if tn$ = " " then 31000
+31100 goto 50000
 
 32000 get k$:if k$ = "" then 32000
 32020 if k$ = "1" then tn$ = "idiot v0.0.1"
 32030 if k$ = "2" then tn$ = "idiot v0.0.2"
 32040 if k$ = "3" then tn$ = "idiot v1.0.0"
-32070 if tn$ = " " then 32000 
-32080 goto 50000
+32070 if k$ = "b" then 400
+32080 if tn$ = " " then 32000 
+32100 goto 50000
 
 33000 get k$:if k$ = "" then 33000
 33020 if k$ = "1" then tn$ = "tictactoe v1.0.0"
 33030 if k$ = "2" then tn$ = "tictactoe v1.0.1"
 33040 if k$ = "3" then tn$ = "tictactoe v1.1.0"
-33070 if tn$ = " " then 33000
-33080 goto 50000
+33070 if k$ = "b" then 400
+33080 if tn$ = " " then 33000
+33100 goto 50000
 
 34000 get k$:if k$ = "" then 34000
 34020 if k$ = "1" then tn$ = "boot"
-34070 if tn$ = " " then 34000
-34080 goto 50000
+34070 if k$ = "b" then 400
+34080 if tn$ = " " then 34000
+34100 goto 50000
 
 35000 get k$:if k$ = "" then 35000
 35020 if k$ = "1" then tn$ = "clocks v0.1.0"
-35070 if tn$ = " " then 35000
-35080 goto 50000
+35070 if k$ = "b" then 400
+35080 if tn$ = " " then 35000
+35100 goto 50000
 
 36000 get k$:if k$ = "" then 36000
 36020 if k$ = "1" then tn$ = "mosaic"
-36070 if tn$ = " " then 36000
-36080 goto 50000
+36070 if k$ = "b" then 400
+36080 if tn$ = " " then 36000
+36100 goto 50000
 
-39999 print"you shouldn't be seeing this"
-40000 print"invalid answer. please try again."
-40010 goto 1000
 50000 print"{clear}"
 50010 print chr$(147);
 50020 q$=chr$(34):rem quotes
