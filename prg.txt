@@ -47,7 +47,7 @@
 550 print"(3) tic tac toe c64"
 560 print"(4) c64 sprite demo"
 570 print"(5) c64 clock"
-580 print"(6) c64 decimal bug"
+580 print"(6) mosaic c64"
 
 1000 get k$:if k$ = "" then 1000
 1010 if k$ < "1" then 40000 
@@ -61,33 +61,56 @@
 1190 goto 1000
 
 11000 id$="1":v1$="(1) v0.0.1":v2$="(2) v0.0.2":v3$="(3) v0.0.3":v4$="(4) v0.0.4":v5$="(5) v1.0.0":v6$="(6) v1.0.1"
-11010 goto 30000
-12000 id$="2":v1$="(1) v0.0.1":v2$="(2) v0.0.2":v3$="(3) v1.0.0":v4$="(4) v0.0.4":v5$="(5) v1.0.0":v6$="(6) v1.0.1"
-12010 goto 30000
+11010 d0$="B this is a small  B":d1$="Bmath game that    B":d2$="Breviews calcultingB":d3$="Bthe areas of threeB"
+11020 d4$="Bdifferent shapes. B":d5$="B                  B":d6$="B                  B":d7$="B                  B"
+11030 d8$="B                  B":d9$="B                  B"
+11100 goto 30000
+
+12000 id$="2":v1$="(1) v0.0.1":v2$="(2) v0.0.2":v3$="(3) v1.0.0":v4$="          ":v5$="          ":v6$="          "
+12010 d0$="Ba you are an idiotB":d1$="Bclone for the c64.B":d2$="Bcurrently it has  B":d3$="Bno sound.         B"
+12020 d4$="B                  B":d5$="B                  B":d6$="B                  B":d7$="B                  B"
+12030 d8$="B                  B":d9$="B                  B"
+12100 goto 30000
+
 13000 id$="3":v1$="(1) v1.0.0":v2$="(2) v1.0.1":v3$="(3) v1.1.0":v4$="          ":v5$="          ":v6$="          "
-13010 goto 30000
+13010 d0$="Ba tic tac toe gameB":d1$="Bfor the commodore B":d2$="B64.               B":d3$="B                  B"
+13020 d4$="B                  B":d5$="B                  B":d6$="B                  B":d7$="B                  B"
+13030 d8$="B                  B":d9$="B                  B"
+13100 goto 30000
+
 14000 id$="4":v1$="(1) v1.0.0":v2$="          ":v3$="          ":v4$="          ":v5$="          ":v6$="          "
-14010 goto 30000
+14010 d0$="Ba small demo whereB":d1$="Byou can make a    B":d2$="Bsprite walk acrossB":d3$="Bthe screen.       B"
+14020 d4$="B                  B":d5$="Bthe sprite was    B":d6$="Bgreatly inspired  B":d7$="Bby pokemon red andB"
+14030 d8$="Bblue.             B":d9$="B                  B"
+14100 goto 30000
+
 15000 id$="5":v1$="(1) v0.1.0":v2$="          ":v3$="          ":v4$="          ":v5$="          ":v6$="          "
-15010 goto 30000
+15010 d0$="B this is a digitalB":d1$="Bclock for the c64.B":d2$="B                  B":d3$="Bthis project was  B"
+15020 d4$="Bnever completed,  B":d5$="Bbut it will still B":d6$="Bwork.             B":d7$="B                  B"
+15030 d8$="B                  B":d9$="B                  B"
+15100 goto 30000
+
 16000 id$="6":v1$="(1) v1.0.0":v2$="          ":v3$="          ":v4$="          ":v5$="          ":v6$="          "
-16010 goto 30000
+16010 d0$="B a little screen  B":d1$="Bsaver program.    B":d2$="Bjust sit back and B":d3$="Bwatch the pretty  B"
+16020 d4$="Bpattern.          B":d5$="B                  B":d6$="B                  B":d7$="B                  B"
+16030 d8$="B                  B":d9$="B                  B"
+16100 goto 30000
 
 30000 print"{clear}"
 30005 print" *CCCCCCCCCCCCCCCCCC*CCCCCCCCCCCCCCCCC*"
-30010 print" B this app is a... B                 B"
-30020 print" B                  B "v1$"      B"
-30030 print" B                  B                 B"
-30040 print" B                  B "v2$"      B"
-30050 print" B                  B                 B"
-30060 print" B                  B "v3$"      B"
-30070 print" B                  B                 B"
-30080 print" B                  B "v4$"      B"
-30090 print" B                  B                 B"
-30100 print" B                  B "v5$"      B"
+30010 print" "d0$"                 B"
+30020 print" "d1$" "v1$"      B"
+30030 print" "d2$"                 B"
+30040 print" "d3$" "v2$"      B"
+30050 print" "d4$"                 B"
+30060 print" "d5$" "v3$"      B"
+30070 print" "d6$"                 B"
+30080 print" "d7$" "v4$"      B"
+30090 print" "d8$"                 B"
+30100 print" "d9$" "v5$"      B"
 30110 print" B                  B                 B"
-30120 print" B                  B "v6$"      B"
-30130 print" B                  B                 B"
+30120 print" B press 'r' to go  B "v6$"      B"
+30130 print" B       back       B                 B"
 30140 print" *CCCCCCCCCCCCCCCCCC*CCCCCCCCCCCCCCCCC*"
 30150 print" B   please select the version that   B"
 30160 print" B             you want               B"
@@ -138,7 +161,7 @@
 35080 goto 50000
 
 36000 get k$:if k$ = "" then 36000
-36020 if k$ = "1" then tn$ = "decimal bug"
+36020 if k$ = "1" then tn$ = "mosaic"
 36070 if tn$ = " " then 36000
 36080 goto 50000
 
