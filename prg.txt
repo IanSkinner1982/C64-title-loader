@@ -59,21 +59,22 @@
 575 print" B       B                            B" 
 580 print" B  (6)  B   mosaic c64               B"
 590 print" B       B                            B"
-600 print" B       B                            B"
+600 print" B  (7)  B   cookie clicker c64       B"
 610 print" B       B                            B"
 620 print" B       B                            B"
 630 print" B       B                            B"
 900 print" *CCCCCCC*CCCCCCCCCCCCCCCCCCCCCCCCCCCC*"
 1000 get k$:if k$ = "" then 1000
 1010 if k$ < "1" then 1000
-1020 if k$ > "6" then 1000
+1020 if k$ > "7" then 1000
 1130 if k$ = "1" then 11000
 1140 if k$ = "2" then 12000
 1150 if k$ = "3" then 13000
 1160 if k$ = "4" then 14000 
 1170 if k$ = "5" then 15000
 1180 if k$ = "6" then 16000
-1190 goto 1000
+1190 if k$ = "7" then 17000
+10000 goto 1000
 
 11000 id$="1":v1$="(1) v0.0.1":v2$="(2) v0.0.2":v3$="(3) v0.0.3":v4$="(4) v0.0.4":v5$="(5) v1.0.0":v6$="(6) v1.0.1"
 11010 d0$="B this is a small  B":d1$="Bmath game that    B":d2$="Breviews calcultingB":d3$="Bthe areas of threeB"
@@ -111,6 +112,12 @@
 16030 d8$="B                  B":d9$="B                  B"
 16100 goto 30000
 
+17000 id$="7":v1$="(1) v1.0.0":v2$="(2) v1.2.0":v3$="          ":v4$="          ":v5$="          ":v6$="          "
+17010 d0$="Bcookie clicker c64B":d1$="B(or cc64) is an   B":d2$="Bidle game inspiredB":d3$="Bby the original ccB"
+17020 d4$="Bgame by orteil.   B":d5$="B                  B":d6$="B                  B":d7$="B                  B"
+17030 d8$="B                  B":d9$="B                  B"
+17100 goto 30000
+
 30000 print"{clear}"
 30005 print" *CCCCCCCCCCCCCCCCCC*CCCCCCCCCCCCCCCCC*"
 30010 print" "d0$"                 B"
@@ -140,6 +147,7 @@
 30240 if id$="4" then 34000
 30250 if id$="5" then 35000
 30260 if id$="6" then 36000
+30270 if id$="7" then 37000
 
 31000 get k$:if k$ = "" then 31000
 31020 if k$ = "1" then tn$ = "math game v0.0.1"
@@ -185,6 +193,15 @@
 36070 if k$ = "b" then 400
 36080 if tn$ = " " then 36000
 36100 goto 50000
+
+
+37000 get k$:if k$ = "" then 37000
+37020 if k$ = "1" then tn$ = "cookie v1.0.0"
+37030 if k$ = "2" then tn$ = "cookie v1.2.0"
+37040 if k$ = "b" then 400
+37050 if tn$ = " " then 37000
+37060 goto 50000
+
 
 50000 print"{clear}"
 50010 print chr$(147);
