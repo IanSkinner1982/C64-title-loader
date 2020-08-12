@@ -113,8 +113,8 @@
 16100 goto 30000
 
 17000 id$="7":v1$="(1) v1.0.0":v2$="(2) v1.2.0":v3$="          ":v4$="          ":v5$="          ":v6$="          "
-17010 d0$="Bcookie clicker c64B":d1$="B(or cc64) is an   B":d2$="Bidle game inspiredB":d3$="Bby the original ccB"
-17020 d4$="Bgame by orteil.   B":d5$="B                  B":d6$="B                  B":d7$="B                  B"
+17010 d0$="Bcookie clicker c64B":d1$="B(or cc64) is an   B":d2$="Bidle game based onB":d3$="Bthe original cc   B"
+17020 d4$="Bgame.             B":d5$="B                  B":d6$="B                  B":d7$="B                  B"
 17030 d8$="B                  B":d9$="B                  B"
 17100 goto 30000
 
