@@ -35,7 +35,7 @@ Run with Vice.
 ### Credits and Notes: 
 
 Credits: 
-[@NinjaCheetah](https://github.com/drskinner/)
+[@NinjaCheetah](https://github.com/drskinner/) (for creating the icon)
 
 Notes:
 - Due to the way I have everything set up my commits will appear as commits by drskinner.
