@@ -1,4 +1,7 @@
 # C64-title-loader
+<p align="center">
+<img src="https://github.com/IanSkinner1982/C64-title-loader/blob/master/Loader%20icon.png"/>
+<h1>C64-Title-Loader</h1>
 
 <p align="center">
 
