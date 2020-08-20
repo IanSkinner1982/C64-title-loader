@@ -1,7 +1,6 @@
 # C64-title-loader
 <p align="center">
 <img src="https://github.com/IanSkinner1982/C64-title-loader/blob/master/Loader%20icon.png"/>
-<h1>C64-Title-Loader</h1>
 
 <p align="center">
 
@@ -33,8 +32,12 @@ Run with Vice.
 - C64 Clock
 - You Are an Idiot C64
 - Mosaic C64
-### Notes: 
+### Credits and Notes: 
 
+Credits: 
+[@NinjaCheetah](https://github.com/drskinner/)
+
+Notes:
 - Due to the way I have everything set up my commits will appear as commits by drskinner.
 - Please do not boot an app from the .prg file in /build/ as it will result in a 'file not found' error. Instead use the .d64 included in the releases.
 - Editing program lines larger than 80 characters in CBM BASIC will result in parts of them being deleted. 
