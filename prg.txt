@@ -4,7 +4,7 @@
 12 printdn$dn$dn$dn$dn$dn$dn$
 19 print" *CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC*"
 20 print" B  ianskinner1982's title launcher   B"
-30 print" B             v1.2.0                 B"
+30 print" B             v1.2.2                 B"
 40 print" B   press 'space' to continue        B" 
 50 print" Bor press i for info on the developerB"
 55 print" *CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC*"
