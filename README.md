@@ -14,7 +14,7 @@
 <a href="https://gbatemp.net/download/c64-title-loader.36565/" style="padding-left: 5px; padding-right: 5px;">
 		<img src="https://img.shields.io/badge/GBAtemp-Link-blue.svg" height="20">
 </a>
-<a href="https://github.com/IanSkinner1982/C64-Title-Loader/" style="padding-left: 5px; padding-right: 5px;">
+<a href="https://somsubhra.com/github-release-stats/?username=ianskinner1982&repository=C64-title-loader" style="padding-left: 5px; padding-right: 5px;">
 		<img src="https://img.shields.io/github/downloads/IanSkinner1982/C64-Title-Loader/total?color=Green&label=Downloads&logo=Github" height="20">
 </a>
 </p>

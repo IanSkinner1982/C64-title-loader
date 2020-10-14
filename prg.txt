@@ -1,4 +1,7 @@
 0 rem !to "build/loader.prg"
+
+5 rem d#$ = description | id$ = title id | v#$ = title version
+
 10 print"{clear}"
 15 dn$=chr$(17):rem cursor down
 12 printdn$dn$dn$dn$dn$dn$dn$
@@ -14,23 +17,23 @@
 90 goto 60
 100 print"{clear}"
 110 print" *CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC*"
-120 print" B  ian skinner (ianskinner1982) is a B"
-130 print" B young c64 programmer. he started   B"
-140 print" B making projects in 2017 and has    B"
-150 print" B kept on working with the c64 since B"
-160 print" B then.                              B"
-170 print" B                                    B"  
-180 print" B  ian started off making programs   B"
-190 print" B with the c64c. in 2019 he began to B"
-200 print" B use the c64 mini for all of his    B"
-210 print" B projects. now he mostly uses vice  B"
-220 print" B and dustlayer.                     B"
-230 print" B                                    B"
-240 print" B  all of his saved programs can be  B"
-250 print" B found on this disk.                B"
+120 print" B hi! i'm ian skinner, and welcome toB"
+130 print" B my loader.                         B"
+140 print" B                                    B"
+150 print" B a little bit about me:             B"
+160 print" B i'm a 14 year old who loves old    B"
+170 print" B computers. in 2017 my dad showed meB"  
+180 print" B a c64. i learned a bit about it,   B"
+190 print" B but i just wasn't hooked.          B"
+200 print" B 2 years later i picked it back up, B"
+210 print" B and tried to figure it all out.    B"
+220 print" B writing programs became one of my  B"
+230 print" B favorite things to do.             B"
+240 print" B I hope you enjoy everything i've   B"
+250 print" B created so far.                    B"
 260 print" B                                    B"
-270 print" B  if you want to talk to him in     B"
-280 print" B person then join his server at     B"
+270 print" B   if you want to talk to me in     B"
+280 print" B person then join my discord server B"
 290 print" B                                    B"
 300 print" B   https://tinyurl.com/ianserver    B"
 310 print" B                                    B"
@@ -194,14 +197,12 @@
 36080 if tn$ = " " then 36000
 36100 goto 50000
 
-
 37000 get k$:if k$ = "" then 37000
 37020 if k$ = "1" then tn$ = "cookie v1.0.0"
 37030 if k$ = "2" then tn$ = "cookie v1.2.0"
 37040 if k$ = "b" then 400
 37050 if tn$ = " " then 37000
 37060 goto 50000
-
 
 50000 print"{clear}"
 50010 print chr$(147);
