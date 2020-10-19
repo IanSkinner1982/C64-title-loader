@@ -1,52 +1,38 @@
 0 rem !to "build/loader.prg"
-
-5 rem d#$ = description | id$ = title id | v#$ = title version
-
-10 print"{clear}"
-15 dn$=chr$(17):rem cursor down
-12 printdn$dn$dn$dn$dn$dn$dn$
-19 print" *CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC*"
-20 print" B  ianskinner1982's title launcher   B"
-30 print" B             v1.2.2                 B"
-40 print" B   press 'space' to continue        B" 
-50 print" Bor press i for info on the developerB"
-55 print" *CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC*"
-60 get k$:if k$ = ""then 60 
-70 if k$="i" then 100
-80 if k$=" " then 400
-90 goto 60
-100 print"{clear}"
-110 print" *CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC*"
-120 print" B hi! i'm ian skinner, and welcome toB"
-130 print" B my loader.                         B"
-140 print" B                                    B"
-150 print" B a little bit about me:             B"
-160 print" B i'm a 14 year old who loves old    B"
-170 print" B computers. in 2017 my dad showed meB"  
-180 print" B a c64. i learned a bit about it,   B"
-190 print" B but i just wasn't hooked.          B"
-200 print" B 2 years later i picked it back up, B"
-210 print" B and tried to figure it all out.    B"
-220 print" B writing programs became one of my  B"
-230 print" B favorite things to do.             B"
-240 print" B I hope you enjoy everything i've   B"
-250 print" B created so far.                    B"
-260 print" B                                    B"
-270 print" B   if you want to talk to me in     B"
-280 print" B person then join my discord server B"
-290 print" B                                    B"
-300 print" B   https://tinyurl.com/ianserver    B"
-310 print" B                                    B"
-320 print" *CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC*"
-330 print" B   copyright ian m. skinner 2020    B"
-340 print" *CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC*"
-350 get k$:if k$=""then 350
-360 goto 10
-400 print"{clear}{home} *CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC*"
-410 print" Bwelcome to ian's title launcher.    B"
-415 print" Bhere you can see all of his projectsB"
-420 print" Band brief descriptions of them.     B"
-430 print" Bplease choose a title from below.   B"
+5 rem d#$ = description | id$ = title id | v#$ = title version | tn$ = title name
+6 g$=chr$(166):r1$=chr$(18):r2$=chr$(146)
+7 print"{clear} "
+10 print"      {blk}" g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$
+15 print"      {blk}"g$r1$"{wht}c64      {blk}"r2$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$
+20 print"      {blk}"g$r1$"{wht}title    {blk}"r2$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$"O"
+25 print"      {blk}"g$r1$"{wht}loader   {blk}"r2$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$"L"
+30 print"      {blk}"g$r1$"{wht}         {blk}"r2$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$
+35 print"      {blk}"g$r1$"{wht}v1.2.2   {blk}"r2$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$
+40 print"      {blk}"g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$
+45 print"      {blk}"g$g$g$g$g$g$g$g$g$g$g$g$"{grey1}"g$g$g$"{blk}"g$g$g$g$g$g$g$g$g$g$g$g$
+50 print"      {blk}"g$g$g$g$g$g$g$g$g$g$g$"{grey1}"g$"   {grey1}"g$"{blk}"g$g$"{grey1}"g$"{blk}"g$g$g$g$g$g$g$g$
+55 print"      {blk}"g$g$g$g$g$g$g$g$g$g$g$"{grey1}"g$"   {grey1}"g$"{blk}"g$g$g$g$g$g$g$g$g$g$g$
+60 print"      {blk}"g$g$g$g$g$g$g$g$g$g$g$"{grey1}"g$"   {grey1}"g$"{blk}"g$g$g$g$g$g$g$g$g$g$g$
+65 print"      {blk}"g$g$g$g$g$g$g$g$g$g$g$g$"{grey1}"g$g$g$"{blk}"g$g$g$g$g$g$g$g$g$g$g$g$
+70 print"      {blk}"g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$
+75 print"      {blk}"g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$
+80 print"      {blk}"g$g$g$g$g$g$g$g$g$g$g$g$g$"{grey1}"g$"{blk}"g$g$g$g$g$g$g$g$g$g$g$g$g$
+85 print"      {blk}"g$g$g$g$g$g$g$g$g$g$g$g$g$"{grey1}"g$"{blk}"g$g$g$g$g$g$g$g$g$g$g$g$g$
+90 print"      {blk}"g$g$g$g$g$g$g$g$g$g$g$g$g$"{grey1}"g$"{blk}"g$g$g$g$g$g$g$g$g$g$g$g$g$
+95 print"      {blk}"g$g$g$g$g$g$g$g$g$g$g$g$g$"{grey1}"g$"{blk}"g$g$g$g$g$g$g$g$g$g$g$g$g$
+100 print"      {blk}"g$g$g$g$g$g$g$g$g$g$g$g$g$"{grey1}"g$"{blk}"g$g$g$g$g$g$g$g$g$g$g$g$g$
+105 print"      {blk}"g$g$g$g$g$g$g$g$g$g$g$g$g$"{grey1}"g$"{blk}"g$g$g$g$g$g$g$g$g$g$g$g$g$
+110 print"      {blk}"g$g$g$g$g$g$g$g$g$g$g$g$g$"{grey1}"g$"{blk}"g$g$g$g$g$g$g$g$g$g$g$g$g$
+115 print"      {blk}"g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$
+120 print"      {blk}"g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$
+125 get k$:if k$=""then125
+130 clr
+300 dn$=chr$(17):rem cursor down
+400 poke646,14:print"{clear}{home} *CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC*"
+410 print" Bwelcome to my title loader.         B"
+415 print" B                                    B"
+420 print" Bplease choose a title from below, orB"
+430 print" Bpress 'i' to learn a bit about me.  B"
 450 tn$ = " "
 510 print" *CCCCCCC*CCCCCCCCCCCCCCCCCCCCCCCCCCCC*"
 520 print" B       B                            B"
@@ -68,6 +54,7 @@
 630 print" B       B                            B"
 900 print" *CCCCCCC*CCCCCCCCCCCCCCCCCCCCCCCCCCCC*"
 1000 get k$:if k$ = "" then 1000
+1005 if k$ = "i" then 60000
 1010 if k$ < "1" then 1000
 1020 if k$ > "7" then 1000
 1130 if k$ = "1" then 11000
@@ -213,5 +200,30 @@
 50060 rem load keyboard buffer and flush it
 50070 poke631,19:poke632,13:poke633,13:poke198,3
 
-
-
+60000 print"{clear}"
+60110 print" *CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC*"
+60120 print" B hi! i'm ian skinner, and welcome toB"
+60130 print" B my title loader.                   B"
+60140 print" B                                    B"
+60150 print" B a little bit about me:             B"
+60160 print" B i'm a 14 year old who likes old    B"
+60170 print" B computers. in 2017 my dad showed meB"  
+60180 print" B a c64. i learned a bit about it,   B"
+60190 print" B but i just wasn't hooked.          B"
+60200 print" B 2 years later i picked it back up, B"
+60210 print" B and tried to figure it all out.    B"
+60220 print" B writing programs became one of my  B"
+60230 print" B favorite things to do.             B"
+60240 print" B i hope you enjoy everything i've   B"
+60250 print" B created so far.                    B"
+60260 print" B                                    B"
+60270 print" B   if you want to talk to me in     B"
+60280 print" B person then join my discord server B"
+60290 print" B                                    B"
+60300 print" B   https://tinyurl.com/ianserver    B"
+60310 print" B                                    B"
+60320 print" *CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC*"
+60330 print" B   copyright ian m. skinner 2020    B"
+60340 print" *CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC*"
+60400 getk$:ifk$=""then60400
+60450 goto 400
