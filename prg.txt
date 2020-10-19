@@ -54,7 +54,7 @@
 630 print" B       B                            B"
 900 print" *CCCCCCC*CCCCCCCCCCCCCCCCCCCCCCCCCCCC*"
 1000 get k$:if k$ = "" then 1000
-1005 if k$ = "i" then 60000
+1005 if k$ = "i" then 5000
 1010 if k$ < "1" then 1000
 1020 if k$ > "7" then 1000
 1130 if k$ = "1" then 11000
@@ -64,11 +64,39 @@
 1170 if k$ = "5" then 15000
 1180 if k$ = "6" then 16000
 1190 if k$ = "7" then 17000
-10000 goto 1000
+4000 goto 1000
+
+5000 print"{clear}"
+5110 print" *CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC*"
+5120 print" B hi! i'm ian skinner, and welcome toB"
+5130 print" B my title loader.                   B"
+5140 print" B                                    B"
+5150 print" B a little bit about me:             B"
+5160 print" B i'm a 14 year old who likes old    B"
+5170 print" B computers. in 2017 my dad showed meB"  
+5180 print" B a c64. i learned a bit about it,   B"
+5190 print" B but i just wasn't hooked.          B"
+5200 print" B 2 years later i picked it back up, B"
+5210 print" B and tried to figure it all out.    B"
+5220 print" B writing programs became one of my  B"
+5230 print" B favorite things to do.             B"
+5240 print" B i hope you enjoy everything i've   B"
+5250 print" B created so far.                    B"
+5260 print" B                                    B"
+5270 print" B   if you want to talk to me in     B"
+5280 print" B person then join my discord server B"
+5290 print" B                                    B"
+5300 print" B   https://tinyurl.com/ianserver    B"
+5310 print" B                                    B"
+5320 print" *CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC*"
+5330 print" B   copyright ian m. skinner 2020    B"
+5340 print" *CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC*"
+5400 getk$:ifk$=""then60400
+5450 goto 400
 
 11000 id$="1":v1$="(1) v0.0.1":v2$="(2) v0.0.2":v3$="(3) v0.0.3":v4$="(4) v0.0.4":v5$="(5) v1.0.0":v6$="(6) v1.0.1"
-11010 d0$="B this is a small  B":d1$="Bmath game that    B":d2$="Breviews calcultingB":d3$="Bthe areas of threeB"
-11020 d4$="Bdifferent shapes. B":d5$="B                  B":d6$="B                  B":d7$="B                  B"
+11010 d0$="B this is a small  B":d1$="Bmath game that    B":d2$="Bteaches you how toB":d3$="Bfigure out the    B"
+11020 d4$="Bareas if differentB":d5$="Bshapes.           B":d6$="B                  B":d7$="B                  B"
 11030 d8$="B                  B":d9$="B                  B"
 11100 goto 30000
 
@@ -199,31 +227,3 @@
 50050 printd$;d$;d$;d$;"run"
 50060 rem load keyboard buffer and flush it
 50070 poke631,19:poke632,13:poke633,13:poke198,3
-
-60000 print"{clear}"
-60110 print" *CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC*"
-60120 print" B hi! i'm ian skinner, and welcome toB"
-60130 print" B my title loader.                   B"
-60140 print" B                                    B"
-60150 print" B a little bit about me:             B"
-60160 print" B i'm a 14 year old who likes old    B"
-60170 print" B computers. in 2017 my dad showed meB"  
-60180 print" B a c64. i learned a bit about it,   B"
-60190 print" B but i just wasn't hooked.          B"
-60200 print" B 2 years later i picked it back up, B"
-60210 print" B and tried to figure it all out.    B"
-60220 print" B writing programs became one of my  B"
-60230 print" B favorite things to do.             B"
-60240 print" B i hope you enjoy everything i've   B"
-60250 print" B created so far.                    B"
-60260 print" B                                    B"
-60270 print" B   if you want to talk to me in     B"
-60280 print" B person then join my discord server B"
-60290 print" B                                    B"
-60300 print" B   https://tinyurl.com/ianserver    B"
-60310 print" B                                    B"
-60320 print" *CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC*"
-60330 print" B   copyright ian m. skinner 2020    B"
-60340 print" *CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC*"
-60400 getk$:ifk$=""then60400
-60450 goto 400
