@@ -2,7 +2,7 @@
 5 rem d#$ = description | id$ = title id | v#$ = title version | tn$ = title name
 6 g$=chr$(166):r1$=chr$(18):r2$=chr$(146)
 7 print"{clear} "
-10 print"      {blk}" g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$
+10 print"      {blk}"g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$
 15 print"      {blk}"g$r1$"{wht}c64      {blk}"r2$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$
 20 print"      {blk}"g$r1$"{wht}title    {blk}"r2$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$"O"
 25 print"      {blk}"g$r1$"{wht}loader   {blk}"r2$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$"L"
@@ -27,18 +27,15 @@
 120 print"      {blk}"g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$
 125 get k$:if k$=""then125
 130 clr
-300 dn$=chr$(17):rem cursor down
-400 poke646,14:print"{clear}{home} *CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC*"
-410 print" Bwelcome to my title loader.         B"
-415 print" B                                    B"
+300 dn$=chr$(17):tn$ = " "
+400 poke646,14:print"{clear}{home} {$b0}CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC{$ae}"
 420 print" Bplease choose a title from below, orB"
 430 print" Bpress 'i' to learn a bit about me.  B"
-450 tn$ = " "
-510 print" *CCCCCCC*CCCCCCCCCCCCCCCCCCCCCCCCCCCC*"
+510 print" {$ab}CCCCCCC{$b2}CCCCCCCCCCCCCCCCCCCCCCCCCCCC{$b3}"
 520 print" B       B                            B"
-530 print" B  (1)  B   c64 math game            B"
+530 print" B  (1)  B   cookie clicker c64       B"
 535 print" B       B                            B"
-540 print" B  (2)  B   you are an idiot c64     B"
+540 print" B  (2)  B   c64 math game            B"
 545 print" B       B                            B"
 550 print" B  (3)  B   tic tac toe c64          B"
 555 print" B       B                            B"   
@@ -48,11 +45,11 @@
 575 print" B       B                            B" 
 580 print" B  (6)  B   mosaic c64               B"
 590 print" B       B                            B"
-600 print" B  (7)  B   cookie clicker c64       B"
+600 print" B  (7)  B   you are an idiot c64     B"
 610 print" B       B                            B"
-620 print" B       B                            B"
-630 print" B       B                            B"
-900 print" *CCCCCCC*CCCCCCCCCCCCCCCCCCCCCCCCCCCC*"
+620 print" {$ab}CCCCCCC{$b1}CCCCCCCCCCCCCCCCCCCCCCCCCCCC{$b3}"
+630 print" B   copyright ian m. skinner 2020    B"
+900 print" {$ad}CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC{$bd}"
 1000 get k$:if k$ = "" then 1000
 1005 if k$ = "i" then 5000
 1010 if k$ < "1" then 1000
@@ -67,7 +64,7 @@
 4000 goto 1000
 
 5000 print"{clear}"
-5110 print" *CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC*"
+5110 print" {$b0}CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC{$ae}"
 5120 print" B hi! i'm ian skinner, and welcome toB"
 5130 print" B my title loader.                   B"
 5140 print" B                                    B"
@@ -88,21 +85,21 @@
 5290 print" B                                    B"
 5300 print" B   https://tinyurl.com/ianserver    B"
 5310 print" B                                    B"
-5320 print" *CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC*"
+5320 print" {$ab}CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC{$b3}"
 5330 print" B   copyright ian m. skinner 2020    B"
-5340 print" *CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC*"
+5340 print" {$ad}CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC{$bd}"
 5400 getk$:ifk$=""then5400
 5450 goto 400
 
-11000 id$="1":v1$="(1) v0.0.1":v2$="(2) v0.0.2":v3$="(3) v0.0.3":v4$="(4) v0.0.4":v5$="(5) v1.0.0":v6$="(6) v1.0.1"
-11010 d0$="B this is a small  B":d1$="Bmath game that    B":d2$="Bteaches you how toB":d3$="Bfigure out the    B"
-11020 d4$="Bareas of differentB":d5$="Bshapes.           B":d6$="B                  B":d7$="B                  B"
+11000 id$="7":v1$="(1) v1.0.0":v2$="(2) v1.2.0":v3$="          ":v4$="          ":v5$="          ":v6$="          "
+11010 d0$="Bcookie clicker c64B":d1$="B(or cc64) is an   B":d2$="Bidle game based onB":d3$="Bthe original cc   B"
+11020 d4$="Bgame.             B":d5$="B                  B":d6$="B                  B":d7$="B                  B"
 11030 d8$="B                  B":d9$="B                  B"
 11100 goto 30000
 
-12000 id$="2":v1$="(1) v0.0.1":v2$="(2) v0.0.2":v3$="(3) v1.0.0":v4$="          ":v5$="          ":v6$="          "
-12010 d0$="Ba you are an idiotB":d1$="Bthing for the c64.B":d2$="Bcurrently it has  B":d3$="Bno sound.         B"
-12020 d4$="B                  B":d5$="B                  B":d6$="B                  B":d7$="B                  B"
+12000 id$="1":v1$="(1) v0.0.1":v2$="(2) v0.0.2":v3$="(3) v0.0.3":v4$="(4) v0.0.4":v5$="(5) v1.0.0":v6$="(6) v1.0.1"
+12010 d0$="B this is a small  B":d1$="Bmath game that    B":d2$="Bteaches you how toB":d3$="Bfigure out the    B"
+12020 d4$="Bareas of differentB":d5$="Bshapes.           B":d6$="B                  B":d7$="B                  B"
 12030 d8$="B                  B":d9$="B                  B"
 12100 goto 30000
 
@@ -130,14 +127,13 @@
 16030 d8$="B                  B":d9$="B                  B"
 16100 goto 30000
 
-17000 id$="7":v1$="(1) v1.0.0":v2$="(2) v1.2.0":v3$="          ":v4$="          ":v5$="          ":v6$="          "
-17010 d0$="Bcookie clicker c64B":d1$="B(or cc64) is an   B":d2$="Bidle game based onB":d3$="Bthe original cc   B"
-17020 d4$="Bgame.             B":d5$="B                  B":d6$="B                  B":d7$="B                  B"
+17000 id$="2":v1$="(1) v0.0.1":v2$="(2) v0.0.2":v3$="(3) v1.0.0":v4$="          ":v5$="          ":v6$="          "
+17010 d0$="Ba you are an idiotB":d1$="Bthing for the c64.B":d2$="Bcurrently it has  B":d3$="Bno sound.         B"
+17020 d4$="B                  B":d5$="B                  B":d6$="B                  B":d7$="B                  B"
 17030 d8$="B                  B":d9$="B                  B"
 17100 goto 30000
 
-30000 print"{clear}"
-30005 print" *CCCCCCCCCCCCCCCCCC*CCCCCCCCCCCCCCCCC*"
+30000 print"{clear} {$b0}CCCCCCCCCCCCCCCCCC{$b2}CCCCCCCCCCCCCCCCC{$ae}"
 30010 print" "d0$"                 B"
 30020 print" "d1$" "v1$"      B"
 30030 print" "d2$"                 B"
@@ -151,13 +147,13 @@
 30110 print" B                  B                 B"
 30120 print" B press 'b' to go  B "v6$"      B"
 30130 print" B       back       B                 B"
-30140 print" *CCCCCCCCCCCCCCCCCC*CCCCCCCCCCCCCCCCC*"
+30140 print" {$ab}CCCCCCCCCCCCCCCCCC{$b1}CCCCCCCCCCCCCCCCC{$b3}"
 30150 print" B   please select the version that   B"
 30160 print" B             you want               B"
 30170 print" B                                    B"
-30180 print" *CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC*"
+30180 print" {$ab}CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC{$b3}"
 30190 print" B   copyright ian m. skinner 2020    B"
-30200 print" *CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC*"
+30200 print" {$ad}CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC{$bd}"
 
 30210 if id$="1" then 31000
 30220 if id$="2" then 32000
