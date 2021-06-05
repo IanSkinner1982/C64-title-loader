@@ -7,7 +7,7 @@
 20 print"      {blk}"g$r1$"{wht}title    {blk}"r2$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$"O"
 25 print"      {blk}"g$r1$"{wht}loader   {blk}"r2$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$"L"
 30 print"      {blk}"g$r1$"{wht}         {blk}"r2$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$
-35 print"      {blk}"g$r1$"{wht}v1.2.3   {blk}"r2$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$
+35 print"      {blk}"g$r1$"{wht}v1.2.4   {blk}"r2$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$
 40 print"      {blk}"g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$g$
 45 print"      {blk}"g$g$g$g$g$g$g$g$g$g$g$g$"{grey1}"g$g$g$"{blk}"g$g$g$g$g$g$g$g$g$g$g$g$
 50 print"      {blk}"g$g$g$g$g$g$g$g$g$g$g$"{grey1}"g$"   {grey1}"g$"{blk}"g$g$"{grey1}"g$"{blk}"g$g$g$g$g$g$g$g$
@@ -48,7 +48,7 @@
 600 print" B       B                            B"
 610 print" B       B                            B"
 620 print" {$ab}CCCCCCC{$b1}CCCCCCCCCCCCCCCCCCCCCCCCCCCC{$b3}"
-630 print" B   copyright ian m. skinner 2020    B"
+630 print" B   copyright ian m. skinner 2021    B"
 900 print" {$ad}CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC{$bd}"
 1000 get k$:if k$ = "" then 1000
 1005 if k$ = "i" then 5000
@@ -86,7 +86,7 @@
 5300 print" B   https://tinyurl.com/ianserver    B"
 5310 print" B                                    B"
 5320 print" {$ab}CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC{$b3}"
-5330 print" B   copyright ian m. skinner 2020    B"
+5330 print" B   copyright ian m. skinner 2021    B"
 5340 print" {$ad}CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC{$bd}"
 5400 getk$:ifk$=""then5400
 5450 goto 400
@@ -140,7 +140,7 @@
 30160 print" B             you want               B"
 30170 print" B                                    B"
 30180 print" {$ab}CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC{$b3}"
-30190 print" B   copyright ian m. skinner 2020    B"
+30190 print" B   copyright ian m. skinner 2021    B"
 30200 print" {$ad}CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC{$bd}"
 
 30210 if id$="1" then 31000
